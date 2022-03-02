@@ -196,7 +196,7 @@ def changepassword(request , token):
                     
 
                     
-                messages.success(request, 'Password updated successfully!')
+                messages.success(request, 'Password updated!')
                 return redirect('login')
                 
             
