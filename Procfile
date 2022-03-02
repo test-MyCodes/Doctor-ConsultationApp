@@ -1,1 +1,1 @@
-web: gunicorn p_doctorConsult.wsgi --log-file
+web: gunicorn p_doctorConsult.wsgi --log-file -
