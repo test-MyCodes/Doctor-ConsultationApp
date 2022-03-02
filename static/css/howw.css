@@ -1,0 +1,51 @@
+#dc{
+    color: black;
+    font-weight: bold;
+    font-size: 110%;
+    
+   }
+   #con{
+       color: #c32865;;
+       font-weight: bold;
+       font-size: 110%;
+   }
+.lef{
+    margin-left: 10px;
+}
+
+b:hover{
+    color: #c32865;
+}
+
+h4:hover{
+    text-decoration: underline;
+}
+
+h3:hover{
+    
+    color: #c32865;
+    text-decoration: underline;
+}
+
+
+  
+ 
+
+  
+  
+
+body {
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+

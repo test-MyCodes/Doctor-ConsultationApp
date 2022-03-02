@@ -1,0 +1,33 @@
+#dc{
+    color: black;
+    font-weight: bold;
+    font-size: 110%;
+    
+   }
+   #con{
+       color: #c32865;;
+       font-weight: bold;
+       font-size: 110%;
+   }
+
+   textarea {
+    resize: none;
+}
+.col
+{
+    font-size: 100%;
+}
+.col:hover{
+    color: #c32865;
+}
+
+.form-control{
+    width: 70%;
+}
+
+.top{
+    font-size: 120%;
+}
+.top:hover{
+    color: #c32865;
+}

@@ -1,0 +1,1 @@
+web: gunicorn p_doctorConsult.wsgi --log-file
