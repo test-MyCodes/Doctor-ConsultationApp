@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta property="og:title" content="Doctor Consultation App" />
-    <meta property="og:description" content="Doctor Consultation App,offers complete solutions for handling patients and hospital can effectively and securely manage their patients information.  "/>
+    <meta property="og:description" content="Doctor Consultation App, offers complete telemedicine solutions for maintaining hospitals. Patient Informations are securely and access later"/>
 
 
   <link rel="icon" href="{% static 'image/logo.jpg' %}" type="image/gif" sizes="16x16">
@@ -42,29 +42,25 @@
   </nav>
 
 
-<div class="container mt-5">
-  <div class="row">
+<div class="oo mt-3">
 
-    <div class="col-1 col-md-3 mt-5">
-      
-    </div>
-    <div class="col-1">
-      
-    </div>
+
     
-    <div class="col">
+    
 
-      <div class="row">
-        <div class="col">
-          <h2 class="animate-charcter">Doctor Consultation</h2> <br>
-        </div>
-      </div>
+     <center>
+      <h2 class="animate-charcter">Doctor Consultation</h2> 
+     </center>
+          
+        
 
       
 
-                 
+       <center>
+
+           
      
-<div class="col-9  col-sm-9 col-md-9  col-lg-7 col-xl-5">
+<div class="col-9  col-sm-9 col-md-9  col-lg-7 col-xl-5 mt-3">
 
       {% for message in messages  %} 
       <div class="alert alert-{{ message.tags }}  alert-dismissible fade show" role="alert">
@@ -81,13 +77,13 @@
 
 
 
-      <div class="left">
+      <div>
       <form action="" method="POST" class="needs-validation" novalidate>
         {% csrf_token %}
         
-          <div class="col-8  col-sm-8 col-md-8  col-lg-6 col-xl-4">
-  
-            <select name="role" id="c" class="form-control" required>
+         
+       
+            <select name="role" id="c" class="form-control form-controli" required>
               <option value="">Please choose user</option>
               <option value="Attendant">Attendant</option>
               <option value="Doctor">Doctor</option>
@@ -96,36 +92,32 @@
                 Please fill out this field
               </div>
             </select>
-          </div>
-  
-          <br>
-  
+        
+            <br>
   
   
-          <div class="col-8  col-sm-8 col-md-8  col-lg-6 col-xl-4">
-            <input type="email" name="email" class="form-control" placeholder="Email address" required>
+  
+          
+            <input type="email" name="email" class="form-control form-controli" placeholder="Email address" required>
             <div class="invalid-feedback">
               Please fill out this field
             </div>
-          </div> <br>
-          <div class="col-8  col-sm-8 col-md-8  col-lg-6 col-xl-4">
-            <input type="password" name="password" class="form-control" placeholder="Password" required>
+            
+           <br>
+           
+            <input type="password" name="password" class="form-control form-controli" placeholder="Password" required>
             <div class="invalid-feedback">
               please fill out this field
             </div>
-          </div>
+          
           <br>
           
-          <div class="row ">
-            <div class="col">
+          
             <input type="submit" class="btn btn-outline-danger lg" name="login" value="Login">
           <span class="between"><button type="button" class="btn btn-outline-dark su" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button> </span>
           </div> 
-          </div>
-          <div class="row ">
-            <div class="col">
-            
-          </div></div>
+          
+         
          
   
          
@@ -134,13 +126,20 @@
       </form>
 
       <div class="mt-3">
-      <a class="frg"  href="{% url 'forget' %}">Forget Password ?</a>
-      <span> <a class="at" href="{% url 'how'%}"><span class="btw2">How to use !</span></a></span>
-      <p ><a style="cursor: pointer;text-decoration:none;" class="dev" onclick="typeWriter()">Developed By,</a> </p>
+      
+      <a class="frg2 " href="{% url 'forget' %}">Forget Password ?</a>
+      <span> <a class="at2" href="{% url 'how'%}"><span class="btw2">How to use !</span></a></span>
+
+      <center>
+
+        <p ><a style="cursor: pointer;text-decoration:none;" class="dev2"  onclick="typeWriter()">Developed By,</a> </p>
+        <p id="demo"></p>
+      </center>
+     
       
     </div>
     
-
+  </center>   
 
 
 
@@ -150,7 +149,7 @@
 
     
     
-    <p id="demo"></p>
+  
     
     <script>
     var i = 0;
@@ -201,7 +200,7 @@
                     <label for="myInput" class="col-form-label">Attendant password</label>
                     <input type="password" name="a" class="form-control" id="myInput" placeholder="Attendant-password"
                       required>
-                    <input type="checkbox" onclick="myFunction()">show password
+                    <input type="checkbox" class="mt-2" onclick="myFunction()">show password
                     <script>
                       function myFunction() {
                         var x = document.getElementById("myInput");
@@ -222,7 +221,7 @@
                   <label for="myInput2" class="col-form-label">Doctor password</label>
                   <input type="password" name="d" class="form-control" id="myInput2" placeholder="Doctor-password"
                     required>
-                  <input type="checkbox" onclick="myFunction2()">show password
+                  <input type="checkbox" class="mt-2" onclick="myFunction2()"> show password
                   <script>
                     function myFunction2() {
                       var x = document.getElementById("myInput2");
@@ -243,7 +242,7 @@
                   <label for="myInput3" class="col-form-label">Medical Shop password</label>
                   <input type="password" name="m" class="form-control" id="myInput3" placeholder="MedicalShop-password"
                     required>
-                  <input type="checkbox" onclick="myFunction3()">show password
+                  <input type="checkbox" class="mt-2" onclick="myFunction3()"> show password
                   <script>
                     function myFunction3() {
                       var x = document.getElementById("myInput3");
@@ -331,4 +330,93 @@
   })()
 </script>
 
+
+<style>
+  .form-controli{
+    width: 25%;
+  }
+  .frg2{
+      text-decoration: none;
+   
+      color: rgba(0, 0, 0, 0.555)
+  }
+  .frg2:hover{
+color: #231557;
+text-decoration: underline;
+}
+.at2{
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.555)
+  }
+.at2:hover{
+    color: #c32865;
+    text-decoration: underline;
+}
+.dev2{
+ 
+    color:rgba(0, 0, 0, 0.555);
+}
+.dev2:hover{
+    color: #44107a;
+    text-decoration: underline;
+}
+ 
+  @media(max-width:800px){
+   
+    .form-controli{
+      width: 60%;
+    }
+    
+    ::placeholder{
+      font-size: 100%;
+    }
+    .lg,.su{
+      width: 30%;
+    }
+  }
+  @media screen and (max-width:1000px) and (min-width:800px) {
+   
+   
+   .form-controli{
+     width: 40%;
+   }
+   
+   ::placeholder{
+     font-size: 100%;
+   }
+   .lg,.su{
+     width: 20%;
+   }
+ }
+
+
+ @media screen and (max-width:1400px) and (min-width:1000px) {
+    
+    .form-controli{
+     width: 34%;
+   }
+   
+   ::placeholder{
+     font-size: 100%;
+   }
+   .lg,.su{
+     width: 17%;
+   }
+
+  }
+  @media screen and (max-width:1700px) and (min-width:1400px) {
+    
+    .form-controli{
+     width: 26%;
+   }
+   
+   ::placeholder{
+     font-size: 100%;
+   }
+   .lg,.su{
+     width: 12.5%;
+   }
+
+  }
+</style>
 </html>
